@@ -1,0 +1,16 @@
+# notificaton generator (2nd method)
+# time and message can be set by user
+# there is no separate file to save the notification appear time
+
+
+import time
+from plyer import notification
+if __name__ == '__main__':
+    while True:
+        notification.notify(
+            title = "All day reminder",
+            message =  "submit your mini project",
+            timeout = 15
+        )
+        time.sleep(3)
+
